@@ -1,6 +1,6 @@
 @import "normalize"
 @import "vars"
-@import "mixins"
+@import "mymixins"
 
 *
 	padding: 0
@@ -40,18 +40,10 @@ a
 
 .empty
 	height: 100px
-
-// FOOTER	
-.footer
-	width: 100%
-	height: 100px
-	margin-top: -100px
-	position: relative
-	background-color: $grey
 	
 .container
 	width: 1000px
-	min-height: 250px 
+	// min-height: 250px 
 	margin: 0 auto
 	@include clearfix
 
@@ -59,7 +51,9 @@ a
 .header
 	background-color: #EFD661 
 
-.header__logo, .header__address, .header__phone
+.header__logo,
+.header__address,
+.header__phone
 	float: left
 
 // HEADER__TOP
@@ -190,3 +184,45 @@ a
 	height: 510px
 	background-color: #66655F
 	
+// FOOTER	
+.footer
+	width: 100%
+	min-height: 100px
+	margin-top: -100px
+	position: relative
+	background-color: $grey
+	
+.footer-logo__pic
+	display: block
+	max-width: 70px
+	min-height: 25px 
+	
+.footer-logo,
+.footer__phone,
+.foooter__address,
+.social
+	float: left
+	margin-top: 30px
+	
+
+.footer__phone, .foooter__address
+	font-size: 18px
+	font-family: 'Roboto Condensed', sans-serif
+	text-align: center
+	color: #fff
+
+.footer-logo
+	width: 10%
+	
+.footer-logo__pic
+	margin: 0 auto 
+	 	
+.footer__phone
+	width: 25%
+	
+.foooter__address
+	width: 35%
+	
+.social
+	width: 30%
+	text-align: center
