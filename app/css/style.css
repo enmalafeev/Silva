@@ -416,9 +416,6 @@ a {
   .container:after {
     clear: both; }
 
-.header {
-  background: url("../img/jpg/brus.jpg") no-repeat 100%; }
-
 .header__logo,
 .header__address,
 .header__phone {
@@ -439,7 +436,8 @@ a {
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 1.2;
-  padding: 30px 0; }
+  padding: 30px 0;
+  color: #000000; }
 
 .header__phone {
   width: 45%; }
@@ -456,7 +454,8 @@ a {
   font-size: 16px;
   font-family: 'Roboto Condensed', sans-serif;
   text-align: right;
-  margin-top: 15px; }
+  margin-top: 15px;
+  color: #000000; }
 
 .phone1 {
   font-size: 25px;
@@ -492,9 +491,11 @@ a {
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 25px 20px; }
+  padding: 25px 20px;
+  color: #000000; }
   .menu__link:hover {
-    background-color: #DCDAD2; }
+    background-color: #DCDAD2;
+    color: #000; }
 
 .send-order {
   float: right;
@@ -513,6 +514,13 @@ a {
   text-decoration: none;
   text-transform: uppercase; }
 
+.main-box__img {
+  display: block;
+  margin: 0 auto;
+  min-width: 1500px;
+  min-height: 745px;
+  overflow: hidden; }
+
 .features {
   width: 1000px;
   margin: 0 auto;
@@ -526,7 +534,26 @@ a {
   margin-top: 25px;
   margin-right: 10px;
   background-color: #BABABC;
-  font-size: 16px; }
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.features__img {
+  max-width: 80px;
+  margin: 0 auto; }
+
+.fa {
+  color: green;
+  text-align: center; }
+
+.features__title {
+  text-align: center;
+  text-transform: uppercase; }
+
+.features__desc {
+  max-width: 260px;
+  text-align: center;
+  margin: 0 auto; }
 
 .products {
   margin: 0 auto;
