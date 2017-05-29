@@ -6,11 +6,11 @@ ymaps.ready(init);
 
     function init(){     
         myMap = new ymaps.Map("map", {
-            center: [59.66976990, 29.90360227],
-            zoom: 14
+            center: [59.67068375, 29.90353240],
+            zoom: 16
         });
 
-        myPlacemark1 = new ymaps.Placemark([59.66976990, 29.90360227], { 
+        myPlacemark1 = new ymaps.Placemark([59.67068375, 29.90353240], { 
         	balloonContentHeader: 'Пилорама Silva',
 		    balloonContentBody: 'Пилорама Silva',
 		    balloonContentFooter: 'Брус, доска по лучшим ценам',
@@ -19,7 +19,7 @@ ymaps.ready(init);
 
         // myMap.geoObjects.add(myPlacemark1);
 
-        var myPlacemark = new ymaps.Placemark([59.66976990, 29.90360227], {
+        var myPlacemark = new ymaps.Placemark([59.67068375, 29.90353240], {
         	balloonContentHeader: 'Пилорама Silva',
 		    balloonContentBody: 'Пилорама Silva',
 		    balloonContentFooter: 'Брус, доска по лучшим ценам',
