@@ -47,7 +47,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('clean', function() {
-	return del.sync('dist');
+	return del.sync('docs');
 });
 
 gulp.task('clear', function() {
@@ -62,7 +62,7 @@ gulp.task('img', function() {
 		svgoPlugins: [{removeViewBox: false}],
 		une: [pngquant()]
 	})))
-	.pipe(gulp.dest('dist/img'));
+	.pipe(gulp.dest('docs/img'));
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
@@ -74,17 +74,20 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
 	var buildCss = gulp.src([
-		'app/css/main.css',
-		'app/css/libs.min.css',
+		'app/css/style.css',
+		'app/css/font-awesome.css',
 		])
-		.pipe(gulp.dest('dist/css'));
+		.pipe(gulp.dest('docs/css'));
 
 	var buildFonts = gulp.src('app/fonts/**/*')
-		.pipe(gulp.dest('dist/fonts'));
+		.pipe(gulp.dest('docs/fonts'));
+
+	var buildLibs = gulp.src('app/libs/**/*')
+		.pipe(gulp.dest('docs/libs'))
 
 	var buildJs = gulp.src('app/js/**/*')
-		.pipe(gulp.dest('dist/js'));
+		.pipe(gulp.dest('docs/js'));
 
 	var buildHtml = gulp.src('app/*.html')
-		.pipe(gulp.dest('dist'));
+		.pipe(gulp.dest('docs'));
 });
