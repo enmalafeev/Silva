@@ -27,6 +27,7 @@
 							Пн-Вс: с 9:00 до 19:00
 						</div>
 						<div class="phone1">
+							<i class="fa fa-phone" aria-hidden="true"></i>
 							+7 (812) 981-17-64
 						</div>
 				
@@ -38,10 +39,11 @@
 					<nav class="menu">
 						<ul class="menu__list">
 							<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Продукция</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Доставка</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">О комании</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+							<li class="menu__item"><a href="#feat" class="menu__link">Наши преимущества</a></li>
+							<li class="menu__item"><a href="#prod" class="menu__link">Продукция</a></li>
+							<!-- <li class="menu__item"><a href="#" class="menu__link">Доставка</a></li> -->
+							<li class="menu__item"><a href="#desc" class="menu__link">О комании</a></li>
+							<li class="menu__item"><a href="#contact" class="menu__link">Контакты</a></li>
 						</ul>
 					</nav>
 					
@@ -63,7 +65,7 @@
 		</div>
 
 		
-		<section class="features">
+		<section id="feat" class="features">
 
 			<!-- <div class="container"> -->
 			<h2 class="features__title">Наши преимущества</h2>
@@ -95,7 +97,7 @@
 
 		</section>
 
-		<section class="products">
+		<section id="prod" class="products">
 
 			<div class="container">
 				<h2 class="products__title">Наша продукция</h2>
@@ -122,7 +124,7 @@
 
 		</section>
 
-		<section class="description">
+		<section id="desc" class="description">
 
 			<h2 class="description__title">
 				Качественные пиломатериалы от производителя
@@ -145,7 +147,7 @@
 
 		</section>
 
-		<section class="maps">
+		<section id="contact" class="maps">
 			<h3 class="maps__title">Где мы находимся</h3>
 			<div class="container">
 				<div class="maps__desc">
@@ -155,9 +157,6 @@
 			</div>
 			
 			 <div id="map" class="maps__map"></div>
-				
-
-			
 
 		</section>
 
@@ -186,6 +185,16 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="modal-content">
+		<button class="modal-content__close" type="button" title="Закрыть">Закрыть</button>
+		<h2 class="modal-content__title">Для того чтобы сделать заказ свяжитесь с нами по телефону:</h2>
+		<span class="modal-content__phone">
+			<i class="fa fa-phone" aria-hidden="true"></i>
+			+7 (812) 981-17-64
+		</span>
+	</div>
+		<div class="modal-overlay"></div>
 
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/js.js"></script>
