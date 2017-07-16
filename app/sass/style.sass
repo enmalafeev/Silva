@@ -149,10 +149,20 @@ a
 	background-color: #FFC000 
 	border-radius: 10px 
 	font-size: 16px
+	font-weight: bold 
 	line-height: 20px
 	color: #000
 	text-decoration: none
 	text-transform: uppercase
+	// border: 2px solid #666666 
+	
+.btn-small
+	display: block
+	margin: 0 auto 
+	width: 200px
+	padding: 15px 25px
+	text-align: center 
+
 	
 // MAIN-BOX
 
@@ -416,9 +426,20 @@ a
 	background: #f8f3f0
 	-webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7) 
 	 box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7)   
+
+@keyframes bounce
+	0%
+		transform: translateY(-2000px)
+	70%
+		transform: translateY(30px)	
+	90%
+		transform: translateY(-10px)
+	100%
+		transform: translateY(0)	
 	
 .modal-content-show
 	display: block
+	animation: bounce 0.6s
 
 .modal-content__close
 	position: absolute
@@ -478,6 +499,4 @@ a
 	display: block
 
 
-	 
-     
-	
+
