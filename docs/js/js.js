@@ -41,7 +41,7 @@ var close = document.querySelector(".modal-content__close")
 var overlay = document.querySelector(".modal-overlay")
 
 for(var i=0; i<btn.length; i++){
-    btn[i].addEventListener('click', function(){
+    btn[i].addEventListener('click', function(event){
         event.preventDefault();
         popup.classList.add("modal-content-show");
         overlay.classList.add("modal-overlay-show");  
