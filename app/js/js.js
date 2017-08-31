@@ -37,8 +37,8 @@ ymaps.ready(init);
 
 var btn = document.querySelectorAll(".btn");
 var popup = document.querySelector(".modal-content");
-var close = document.querySelector(".modal-content__close")
-var overlay = document.querySelector(".modal-overlay")
+var close = document.querySelector(".modal-content__close");
+var overlay = document.querySelector(".modal-overlay");
 
 for(var i=0; i<btn.length; i++){
     btn[i].addEventListener('click', function(event){
